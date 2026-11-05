@@ -3,12 +3,12 @@ package animals;
 public class Main {
     public static void main(String[] args) {
         Animal[] zoo = new Animal[6];
-        zoo[0] = new Dog();                                         // default
-        zoo[1] = new Dog("Rex", 5, 22.5, "brown", "Labrador");      // all params
-        zoo[2] = new Pigeon("Gucio", "Columba livia");              // some params
-        zoo[3] = new Pigeon("Ptyś", 2, 0.35, "white", "Rock dove"); // all params
-        zoo[4] = new Blowfish();                                    // default
-        zoo[5] = new Blowfish("Bubble", false);                     // some params
+        zoo[0] = new Dog();
+        zoo[1] = new Dog("Rex", 5, 22.5, "brown", "Labrador");
+        zoo[2] = new Pigeon("Gucio", "Columba livia");
+        zoo[3] = new Pigeon("Ptyś", 2, 0.35, "white", "Rock dove");
+        zoo[4] = new Blowfish();
+        zoo[5] = new Blowfish("Bubble", false);
 
         for (Animal a : zoo) {
             System.out.println(a);
