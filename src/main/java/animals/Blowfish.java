@@ -1,6 +1,6 @@
 package animals;
 
-public class Blowfish extends Fish {
+public class Blowfish extends Fish implements AnimalBehavior {
     private boolean poisonous;
 
     public Blowfish() { super(); this.poisonous = true; }
@@ -12,6 +12,8 @@ public class Blowfish extends Fish {
     }
 
     @Override public void eat() { System.out.println(getName() + " the blowfish crunches on shellfish."); }
+    @Override public void sleepFarhi77491() { System.out.println("Blowfish sleeps near the reef."); }
+    @Override public void moveFarhi77491() { System.out.println("Blowfish swim"); }
     @Override public String getVoice() { return "Blub (a quiet grunt)"; }
     public void inflate() { System.out.println(getName() + " inflates into a ball!"); }
 
