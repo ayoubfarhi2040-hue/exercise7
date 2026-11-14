@@ -17,7 +17,6 @@ public class Main {
             System.out.println();
         }
 
-        // class-specific methods via casting
         ((Dog) zoo[1]).fetch();
         ((Mammal) zoo[1]).nurseYoung();
         ((Pigeon) zoo[2]).deliverMessage();
@@ -28,5 +27,21 @@ public class Main {
         zoo[0].setName("Burek");
         zoo[0].setAge(3);
         System.out.println("\nAfter setters: " + zoo[0]);
+
+        System.out.println("\n--- AnimalBehavior (sleep) ---");
+        AnimalBehavior[] behaviorsFarhi77491 = {
+                new Dog("Rex", "Labrador"),
+                new Pigeon("Gucio", "Columba livia"),
+                new Blowfish("Bubble", false)
+        };
+        behaviorsFarhi77491[0].sleepFarhi77491();
+        behaviorsFarhi77491[1].sleepFarhi77491();
+        behaviorsFarhi77491[2].sleepFarhi77491();
+
+        System.out.println("\n--- AnimalMove (move) + AnimalName (static) ---");
+        for (Animal a : zoo) {
+            a.moveFarhi77491();
+            AnimalName.nameFarhi77491(a.getName());
+        }
     }
 }

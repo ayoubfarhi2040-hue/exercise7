@@ -1,6 +1,6 @@
 package animals;
 
-public class Dog extends Mammal {
+public class Dog extends Mammal implements AnimalBehavior {
     private String breed;
 
     public Dog() { super(); this.breed = "mixed"; }
@@ -12,6 +12,8 @@ public class Dog extends Mammal {
     }
 
     @Override public void eat() { System.out.println(getName() + " the dog eats meat and kibble."); }
+    @Override public void sleepFarhi77491() { System.out.println("Dog sleeps in its kennel."); }
+    @Override public void moveFarhi77491() { System.out.println("Dog run"); }
     @Override public String getVoice() { return "Woof! Woof!"; }
     public void fetch() { System.out.println(getName() + " fetches the ball."); }
 
